@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+#formWrap {
+	margin:0;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+table.formTable{
+	width:99%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:10px;
+}
+table.formTable th{
+	width:25%;
+	font-weight:normal;
+	background:#efefef;
+	text-align:left;
+  white-space: normal;
+}
+table.formTable td{
+	width:74%;
+}
+table.formTable td label {
+    display: inline-block!important;
+    padding-bottom: 7px!important;
+}
+ table.formTable td select {
+    display: inline-block!important;
+    margin-top: 10px!important;
+    margin-bottom: 15px!important;
+  }
+/*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
+@media screen and (max-width:640px) {
+#formWrap {
+	width:95%;
+	margin:0 auto;
+}
+table.formTable th, table.formTable td {
+	width:auto;
+	display:block;
+}
+  /*table.formTable td label {
+    display: inline-block!important;
+    padding-bottom: 10px!important;
+  }*/
+ /* table.formTable td select {
+    display: inline-block!important;
+    margin-top: 10px!important;
+    margin-bottom: 15px!important;
+  }*/
+table.formTable th {
+	margin-top:5px;
+	border-bottom:0;
+}
+input[type="text"], textarea {
+	width:80%;
+	padding:5px;
+	font-size:110%;
+	display:block;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+	display:block;
+	width:100%;
+	height:40px;
+}
+}

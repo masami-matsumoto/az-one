@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, メイリオ, 'Hiragino Kaku Gothic ProN', sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 700px;
+  margin: 15px auto;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.container span,
+.container p,
+.container div {
+  line-height: 120%;
+}
+
+.mailform {
+    width: 700px;
+    margin: 25px auto;
+    color: #555;
+    line-height: 120%;
+    font-size: 90%;
+    display: table;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/*h1::before {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  background: -webkit-linear-gradient(-45deg, transparent, #ccc 10%, #ccc 90%, transparent);
+  background: linear-gradient(-45deg, transparent, #ccc 10%, #ccc 90%, transparent);
+}*/
+
+.submit_area {
+  margin-top: 45px;
+  text-align: center;
+}
+
+
+@media screen and (max-width:640px) {
+  .container {
+  width: 95%;
+  margin: 3% auto;
+  padding: 0;
+  overflow: hidden;
+}
+  .mailform {
+    width: 95%;
+    margin: 5% auto;
+    color: #555;
+
+}
+}

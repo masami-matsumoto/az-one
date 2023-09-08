@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+  table.formTable th.wide {
+    border-bottom: 1px solid #ccc;
+    background-color: #FFF;
+    width: 100%;
+    padding: 1%;
+  }
+  table.formTable th .title {
+     display: block;
+    width: 100%;
+    border: solid 1px #CCC;
+    border-bottom: none;
+    background-color: #efefef;
+    color: #666;
+    padding: 1%;
+    margin-bottom: 0;
+  }
+   table.formTable th .container {
+     width: 100%;
+     display: table;
+     border: solid 1px #CCC;
+     border-bottom: none;
+     background-color: #FFF;
+  }
+  
+   table.formTable th .container .item {
+     display: table-row;
+     padding-right: 2%;
+     border-bottom: solid 1px #CCC;
+  }
+  table.formTable th .container .item:first-child {
+    border-bottom: double 3px #CCC;
+  }
+  table.formTable th .container .item .dt {
+    width: 4em;
+    white-space: nowrap;
+    display: table-cell;
+    padding: 3px;
+    border-left: solid 1px #CCC;
+    vertical-align: middle;
+  }
+  table.formTable th .container .item .dd {
+    padding: 3px;
+    border-left: solid 1px #CCC;
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+  }
+  @media screen and (max-width:640px){
+    table.formTable th .container {
+    }
+    table.formTable th .container .item {
+     border-bottom: none;
+  }
+table.formTable th .container .item:first-child {
+    border:none;
+  }
+  table.formTable th .container .item .dt {
+    width: 100%;
+    white-space: nowrap;
+    display: block;
+    border: none;
+    border-bottom: solid 1px #CCC;
+    font-weight: bold!important;
+  }
+  table.formTable th .container .item .dd {
+    width: 100%;
+    display: block;
+    border-bottom: double 3px #CCC;
+    border-left: none;
+    }
+    table.formTable th .container .item .single_bline {
+    border-bottom: solid 1px #CCC!important;
+    }
+  }

@@ -1,0 +1,4 @@
+Action myphp-script /az-one_TEST/php.cgi
+AddHandler myphp-script .php .html
+
+DirectoryIndex index.html index.htm index.shtml index.php index.cgi

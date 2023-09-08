@@ -1,0 +1,117 @@
+.mailform dl {
+  display: table;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-bottom: none;
+  margin: 0;
+}
+.mailform dt {
+  display: table-cell;
+  box-sizing: border-box;
+  width: 200px;
+  vertical-align: middle!important;
+  border-right: 1px solid #ccc;
+  background-color: #efefef;
+  border-collapse: collapse;
+  padding-left: 5px;
+}
+
+.mailform dd {
+  box-sizing: border-box;
+  width:498px;
+  padding: 10px 8px;
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 3px solid #ccc;
+  border-collapse: collapse;
+  background: none;
+}
+
+.mailform dd input[type="text"],
+.mailform dd select,
+dd textarea {
+  width: 80%;
+  height: 15px;
+  font-family: inherit;
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid #555;
+  box-shadow: inset -2px 2px 3px rgba(0,0,0,.30);
+}
+
+/*.mailform dd input[type="radio"],
+.mailform dd input[type="checkbox"]:{
+  box-shadow: none;
+  border: 5px solid #ccc;
+}*/
+
+/*.mailform dd .nest {
+  padding-left: 45px;
+  margin: 10px 0;
+}*/
+
+/*.mailform dd textarea {
+  width: 350px;
+  height: 120px;
+  box-sizing: border-box;
+  resize: vertical;
+}*/
+
+.confirmation_btn {
+  font-family: inherit;
+  padding: 4px 30px;
+  font-size: 16px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #767676;
+  border-radius: 2px;
+  background:#efefef;
+  color: #555;
+  cursor: pointer;
+}
+
+.confirmation_btn:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width:640px) {
+  .mailform dl {
+  display: block;
+  width: 95%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-bottom: none;
+  margin: 0 auto;
+}
+.mailform dt {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  vertical-align: middle!important;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 2%;
+}
+
+.mailform dd {
+  box-sizing: border-box;
+  width:100%;
+  padding: 2%;
+  display: block;
+  vertical-align: middle;
+  border: none;
+}
+  .mailform dd input {
+    font-size: 90%;
+  }  
+.confirmation_btn {
+  padding: 3% 5% 1%!important;
+  font-size: 5vw;
+  height: auto;
+  vertical-align: middle;
+}.confirmation_btn {
+  padding: 3% 5% 1%!important;
+  font-size: 5vw;
+  height: auto;
+}

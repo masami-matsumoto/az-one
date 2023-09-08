@@ -1,0 +1,658 @@
+@charset "utf-8";
+/* CSS Document */
+.pankuzu {
+  padding-top: 100px;
+}
+
+
+footer {
+  width: 100%;
+  margin: 50px auto 0 auto;
+  background: #d6d6d6;
+}
+
+footer .wrap {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer nav.footer_nav {
+  padding: 0 10px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+footer nav.footer_nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+footer nav.footer_nav ul li {
+  float: left;
+  padding: 0 20px;
+  border-left: 1px solid #333333;
+}
+
+footer nav.footer_nav ul li:first-child {
+  border-left: none;
+}
+
+footer nav.footer_nav ul li a {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+footer .footer_info {
+  padding: 15px 30px 10px 15px;
+  text-align: right;
+  float: right;
+  display: inline-block;
+}
+
+footer .footer_info:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+footer .footer_info .footer_copyrighttext {
+  float: left;
+}
+
+footer .footer_info .footer_access {
+  float: right;
+}
+
+footer .footer_info .footer_access .map a span {
+  display: inline-block;
+  margin-right: 2px;
+  padding: 0 3px;
+  color: #ffffff;
+  background: #333333;
+  border-radius: 4px;
+}
+
+footer small {
+  padding: 15px 3%;
+  line-height: 1;
+  display: block;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+
+.btn_pagetop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.btn_pagetop a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding-top: 17px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #4f764a url(../../img/common/i_arrow_pagetop.svg) no-repeat center top 5px;
+  background-size: 12px auto;
+  border-radius: 100%;
+}
+
+@media print, screen and (min-width: 640px) {
+  section#simulation h2.main_title {
+    width: 98%;
+    height: 95px;
+    margin: 8px auto 20px;
+    text-indent: -99999px;
+    background: url("../img/top/main_title_simulation_ms.png") no-repeat left top;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 640px) {
+  section#simulation h2.main_title {
+    width: 95%;
+    height: 90px;
+    margin: 8px auto 15px;
+    background: url("../img/top/main_title_simulation_sp.png") no-repeat left top;
+    background-size: contain;
+    text-indent: -99999px;
+  }
+}
+.simulation-catch {
+  padding: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  background: #fff;
+  color: #000;
+}
+.baseBox {
+  clear: both;
+  padding-bottom: 20px;
+}
+.basePane {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+.baseForm {
+  margin-top: 30px;
+}
+.btn-info {
+  background: #6FBA2C;
+  border-color: #6FBA2C;
+}
+.baseForm select, .baseForm input[type="text"], .baseForm input[type="date"], .baseForm input[type="number"] {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.baseForm label {
+  display: inline-block;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+}
+.baseFormBar {
+  margin: 20px 0;
+  font-weight: bold;
+  color: #059be7;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid #059be7;
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  font-size: 120%;
+}
+.baseFormDlist {
+  margin-bottom: 20px;
+}
+.baseFormDlist, .baseFormDlist * {
+  box-sizing: border-box;
+}
+.baseFormDlist > dl {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.baseFormDlist dl:last-child {
+  border-bottom: none;
+}
+.baseFormDlist > dl > * {
+  display: table-cell;
+  padding: 10px;
+}
+.baseFormDlist > dl > dt {
+  width: 30%;
+  font-weight: bold;
+}
+.baseFormDlist dl.in input, .baseFormDlist dl.out input, .baseFormDlist dl.select select, .baseFormDlist dl.name input, .baseFormDlist dl.kana input, .baseFormDlist dl.mail input, .baseFormDlist dl.tel input, .baseFormDlist dl.pet input {
+  width: 45%;
+}
+/*
+.baseFormDlist dl.mail input:last-child {
+margin-left: 5px;
+}
+*/
+.baseForm input.datepicker {
+  background: url(../images/icon_calendar.png) no-repeat right center;
+}
+@media all and (min-width: 0) and (max-width: 767px) {
+  .baseForm select, .baseForm input[type="text"], .baseForm input[type="number"] {
+    padding: 5px;
+    margin: 0 3px 0 0;
+  }
+  .baseForm label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+  }
+  .baseFormDlist > dl > * {
+    display: block;
+    width: auto;
+    padding: 10px 0;
+  }
+  .baseFormDlist > dl > dd {
+    padding-top: 0;
+  }
+  .baseFormDlist > dl > dt {
+    width: 100%;
+    text-align: left;
+  }
+  .baseFormDlist dl.in input, .baseFormDlist dl.in select, .baseFormDlist dl.out input, .baseFormDlist dl.out select, .baseFormDlist dl.select select, .baseFormDlist dl.name input, .baseFormDlist dl.kana input, .baseFormDlist dl.mail input, .baseFormDlist dl.pet input {
+    width: 150px;
+    margin: 0;
+  }
+  .baseFormDlist dl.in input:first-child, .baseFormDlist dl.out input:first-child, .baseFormDlist dl.name input:first-child, .baseFormDlist dl.kana input:first-child {
+    margin-bottom: 5px;
+  }
+}
+.baseFormBtn {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+.baseFormBtn input[type="submit"] {
+  box-sizing: border-box;
+  border: none;
+  padding: 5px 0;
+  font-size: 22px;
+  min-width: 300px;
+  margin: 5px 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: #FFFAE0;
+  letter-spacing: 0.05em;
+  background: #F39E00;
+  border-radius: 22px;
+}
+.baseFormBtn input[type="submit"]:hover {
+  opacity: 0.8;
+}
+@media all and (min-width: 0) and (max-width: 767px) {
+  .baseFormBtn input[type="submit"] {
+    min-width: 100%;
+  }
+}
+.baseBox {
+  clear: both;
+  padding-bottom: 20px;
+}
+.basePane {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.baseForm .radiobutton {
+  display: none;
+}
+.baseForm .radiobutton + label {
+  border: solid 1px #ccc;
+  background-color: #fff;
+  display: inline-block;
+  width: 140px;
+  border-radius: 3px;
+  text-align: center;
+  height: 38px;
+  line-height: 1;
+}
+.baseForm .radiobutton + label:hover {
+  background-color: #FBD44D;
+}
+.baseForm .radiobutton:checked + label {
+  background-color: #FBD44D;
+}
+input[readonly] {
+  background: #e9ecef;
+  opacity: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  margin-right: 5px;
+}
+@media all and (min-width: 0) and (max-width: 767px) {
+  .baseForm .radiobutton + label {
+    width: 100%;
+    height: 28px;
+    margin-top: 5px;
+  }
+  .baseFormBtn input[type="submit"] {
+    width: 100%;
+    margin: 0;
+  }
+  input[readonly] {
+    padding: 5px;
+  }
+}
+@media print, screen and (min-width: 640px) {
+  section#simulation02 h2.main_title {
+    width: 98%;
+    height: 95px;
+    margin: 8px auto 20px;
+    text-indent: -99999px;
+    background: url("../img/top/main_title_simulation_ms.png") no-repeat left top;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 640px) {
+  section#simulation02 h2.main_title {
+    width: 95%;
+    height: 90px;
+    margin: 8px auto 15px;
+    background: url("../img/top/main_title_simulation_sp.png") no-repeat left top;
+    background-size: contain;
+    text-indent: -99999px;
+  }
+}
+#simulation02 .wrap_whi {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+}
+#simulation02 .wrap_l {
+  margin-bottom: 3%;
+  padding: 8px;
+  border-width: 1px;
+  border-radius: 5px/5px;
+}
+#simulation02 .busi_top li {
+  float: left;
+  width: 50%;
+}
+#simulation02 .busi_top dl {
+  width: 96%;
+  margin: 12px auto 12px;
+  text-align: center;
+  border: #F1AB26 solid 1px;
+  overflow: hidden;
+}
+#simulation02 .busi_top dl dt {
+  width: 50%;
+  padding: 8px 0;
+  background-color: #F1AB26;
+  line-height: 1.5em;
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  clear: both;
+}
+#simulation02 .busi_top dl dd {
+  width: 50%;
+  padding: 8px 0;
+  line-height: 1.5em;
+  font-size: 20px;
+  float: left;
+}
+.columchart {
+  overflow: hidden;
+}
+.columchart img {
+  width: 100%;
+}
+.tableBlock table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tableBlock table tr {
+  height: 56px;
+  border-bottom: 1px solid #ddd;
+}
+.tableBlock table th {
+  width: 30%;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  border-left: 1px solid #ddd;
+}
+.tableBlock table td {
+  width: 30%;
+  padding: 10px;
+  text-align: left;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.btn-wrap .tableBtn {
+  box-sizing: border-box;
+  border: none;
+  padding: 5px 0;
+  font-size: 22px;
+  min-width: 300px;
+  margin: 5px 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: #FFFAE0;
+  letter-spacing: 0.05em;
+  background: #F39E00;
+  border-radius: 22px;
+  text-align: center;
+}
+.btn-wrap .tableBtn:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 640px) {
+  #simulation02 .wrap_whi {
+    height: 130px;
+  }
+  #simulation02 .busi_top li {
+    float: none;
+    width: 100%;
+  }
+  .btn-wrap {
+    display: block;
+  }
+  .btn-wrap .tableBtn {
+    margin-bottom: 20px;
+  }
+}
+@media print, screen and (min-width: 640px) {
+  section#simulation03 h2.main_title {
+    width: 98%;
+    height: 95px;
+    margin: 8px auto 20px;
+    text-indent: -99999px;
+    background: url("../img/top/main_title_simulation2.png") no-repeat left top;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 640px) {
+  section#simulation03 h2.main_title {
+    width: 95%;
+    height: 90px;
+    margin: 8px auto 15px;
+    background: url("../img/top/main_title_simulation2_sp.png") no-repeat left top;
+    background-size: contain;
+    text-indent: -99999px;
+  }
+}
+#simulation03 table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+#simulation03 table, th, td {
+  border: solid 1px #000;
+  padding: 0.5em;
+}
+#simulation03 table caption {
+  font-weight: bold;
+  height: 35px;
+  margin: 5px 0;
+  line-height: 35px;
+  text-align: left;
+}
+#simulation03 table th {
+  text-align: left;
+  font-weight: bold;
+}
+.col-1 {
+  width: 30%;
+}
+.col-2 {
+  width: 70%;
+}
+.bg-gray {
+  background-color: #fafafa;
+}
+.underline-title {
+  margin: 5px auto 20px;
+  padding-bottom: 5px;
+  border-bottom: #FBD44D 1px solid;
+  font-size: 19px;
+  font-weight: bold;
+}
+.tableBlock table .yellow-box01 {
+  border-right: solid 5px #FBD44D;
+  border-left: solid 5px #FBD44D;
+  border-top: solid 5px #FBD44D;
+}
+.tableBlock table .yellow-box02 {
+  border-right: solid 5px #FBD44D;
+  border-left: solid 5px #FBD44D;
+  border-bottom: solid 5px #FBD44D;
+}
+.tableBlock table .table-title {
+  text-align: center;
+}
+.tableBlock table .bg-red {
+  background-color: rgba(244, 47, 50, 0.6);
+}
+.tableBlock table .bg-blue {
+  background-color: rgba(122, 112, 238, 0.6);
+}
+/* f5 */
+.comparisonForm dl.in input, .comparisonForm dl.out input, .comparisonForm dl.select select, .comparisonForm dl.name input, .comparisonForm dl.kana input, .comparisonForm dl.mail input, .comparisonForm dl.tel input, .comparisonForm dl.pet input {
+  width: 60%;
+}
+.formTitle {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px 5px 0 0;
+}
+.comparisonForm h3 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.formTitle h3 {
+  font-weight: bold;
+}
+.comparisonForm .wrap_whi {
+  display: flex;
+  width: 100%;
+}
+.comparisonForm .wrap_whi .box {
+  width: 50%;
+}
+.comparisonForm .wrap_whi .box h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.comparisonForm .wrap_result {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 5%;
+  border-radius: 0 0 5px 5px;
+}
+.comparisonForm .wrap_result .box {
+  flex: 0 0 49%;
+}
+.comparisonForm .busi_top dl {
+  width: 96%;
+  margin: 12px auto 12px;
+  text-align: center;
+  border: #F1AB26 solid 1px;
+  overflow: hidden;
+}
+.comparisonForm .busi_top dl dt {
+  width: 50%;
+  padding: 8px 0;
+  background-color: #F1AB26;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: #fff;
+  float: left;
+  clear: both;
+}
+.comparisonForm .busi_top dl dd {
+  width: 50%;
+  padding: 8px 0;
+  line-height: 1.5em;
+  font-size: 14px;
+  float: left;
+}
+.comparisonForm .wrap_table {
+  display: flex;
+  justify-content: space-between;
+}
+.comparisonForm .tableBlock table {
+  flex: 0 0 49%;
+}
+.comparisonForm .columchart {
+  margin-bottom: 5%;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.comparisonForm .baseBox {
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 4%;
+}
+.baseForm .comparisonForm .radiobutton + label {
+  margin: 0;
+}
+.comparisonForm .baseFormDlist > dl {
+  display: flex;
+  justify-content: center;
+}
+.comparisonForm .baseFormDlist > dl > dd {
+  max-width: 40%;
+  flex: 1;
+}
+.comparisonForm .baseFormDlist > dl > dt {
+  background: #F2F2F2;
+  border-bottom: 1px solid #fff;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+}
+.comparisonForm .tableBlock table th {
+	border-left: solid 1px #000;
+	text-align: center;
+}
+.notes {
+  display: block;
+  color: red;
+  width: 100%;
+}
+.text-right {
+  text-align: right;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .comparisonForm .baseFormDlist > dl > * {
+    display: table-cell;
+    width: auto;
+    padding: 10px 0;
+  }
+  .comparisonForm .basePane {
+    padding: 0;
+  }
+  .comparisonForm .baseFormDlist dl.in select {
+    width: 100%;
+  }
+  .comparisonForm .baseFormDlist > dl > dd {
+    width: 30%;
+    padding: 5px;
+  }
+  .comparisonForm .baseFormDlist > dl > dt {
+    width: 30%;
+  }
+  .baseForm .radiobutton + label.radio4 {
+    height: 38px;
+  }
+}
