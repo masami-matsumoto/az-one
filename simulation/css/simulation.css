@@ -4,8 +4,8 @@
   padding-top: 100px;
 }
 
-
-footer {
+/* footerのcssはコメントアウト */
+/* footer {
   width: 100%;
   margin: 50px auto 0 auto;
   background: #d6d6d6;
@@ -80,7 +80,7 @@ footer small {
   display: block;
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
-}
+} */
 
 
 .btn_pagetop {
@@ -655,4 +655,52 @@ input[readonly] {
   .baseForm .radiobutton + label.radio4 {
     height: 38px;
   }
+}
+@media print, screen and (min-width: 640px){
+section.explanatory {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 10px;
+    max-width: 900px;
+    overflow: hidden;
+}
+}
+/* 20230920ここから追加 */
+.pankuzu img {
+  width: auto;
+}
+@media print, screen and (min-width: 640px){
+.pankuzu {
+    margin: 10px auto 0;
+    max-width: 900px;
+    color: #999;
+    line-height: 1.1;
+    font-size: 90%;
+}
+}
+@media print, screen and (min-width: 640px){
+#content {
+    padding-top: 15px;
+    background-color: #FFFAE0;
+    background-size: cover;
+    margin-bottom: -50px;
+}
+}
+@media screen and (max-width: 640px){
+#content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: -9%;
+}
+}
+@media screen and (max-width: 640px){
+#content {
+    padding-top: 65px;
+    background-color: #FFFAE0;
+}
+}
+@media screen and (max-width: 640px){
+.pcView {
+    display: none !important;
+}
 }
