@@ -26,8 +26,8 @@ require_once "../PHPExcel/Classes/PHPExcel.php";
     <script type="text/javascript" src="../js/1.10.1_jquery.min.js"></script>
     <script type="text/javascript" src="../js/acor.js"></script>
     <div class="inner">
-        <h1 class="pcView"><a href="/"><img src="../img/common/logo.png" width="100%" height="" alt="AZEST-GROUP" /></a></h1>
-        <h1 class="spView"><a href="/"><img src="../img/common/logo.png" width="318" height="60" alt="AZEST-GROUP" /></a></h1>
+        <h1 class="pcView"><a href="/"><img src="../img/common/logo.svg" width="80%" height="" alt="AZEST-GROUP" /></a></h1>
+        <h1 class="spView"><a href="/"><img src="../img/common/logo.svg" width="318" height="60" alt="AZEST-GROUP" /></a></h1>
         <nav class="pcView">
             <ul>
                 <!-- <li class="message"><a href="/message/">代表ご挨拶</a></li> -->
@@ -66,7 +66,7 @@ require_once "../PHPExcel/Classes/PHPExcel.php";
             max-width: 20px;
         }
     </style>
-    <div class="pankuzu pcView"><a href=""><img src="../img/common/icon_home.png" width="20" height="" alt="home" /></a>&nbsp;&gt;&nbsp;年金受給額シミュレーション</div>
+    <div class="pankuzu pcView"><a href="https://az-one.biz/"><img src="../img/common/icon_home.png" width="20" height="" alt="home" /></a>&nbsp;&gt;&nbsp;年金受給額シミュレーション</div>
 
     <section class="explanatory" id="simulation03">
         <h2 class="main_title">年金受給額シミュレーション</h2>
@@ -101,7 +101,7 @@ require_once "../PHPExcel/Classes/PHPExcel.php";
                             <table class="mb_20" >
                                     <span style="color: red;font-weight: bold;">※老齢基礎年金は、保険料納付済期間と保険料免除期間などを合算した受給資格期間が10年以上ある場合に、65歳から受け取ることができます。</span>
                                 <caption>
-                                    老年厚生年金
+                                    老齢厚生年金
                                 </caption>
                                 <tr class="in">
                                     <th><span>現役中の平均給与月額<br>
@@ -110,11 +110,11 @@ require_once "../PHPExcel/Classes/PHPExcel.php";
                                         円</td>
                                 </tr>
                                 <tr class="in">
-                                    <th><span>老年厚生年金の合算　月額</span></th>
+                                    <th><span>老齢厚生年金の合算　月額</span></th>
                                     <td><span id="after_2003_welfare_month"></span> 円 </td>
                                 </tr>
                                 <tr class="in">
-                                    <th><span>老年厚生年金の合算　年額</span></th>
+                                    <th><span>老齢厚生年金の合算　年額</span></th>
                                     <td><span id="after_2003_welfare_year"></span> 円 </td>
                                 </tr>
                             </table>
@@ -306,6 +306,5 @@ require_once "../PHPExcel/Classes/PHPExcel.php";
 <?php
 include('../layout/footer.php');
 ?>
-<div class="btn_pagetop"><a href="#pagetop" class="anchor">PAGE<br>TOP</a></div>
 </body>
 </html>

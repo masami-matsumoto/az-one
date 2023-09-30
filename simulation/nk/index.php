@@ -265,5 +265,6 @@ include('../layout/header.php');
 <?php
 include('../layout/footer.php');
 ?>
+<div class="btn_pagetop"><a href="#pagetop" class="anchor">PAGE<br>TOP</a></div>
 </body>
 </html>

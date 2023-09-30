@@ -7,9 +7,7 @@ require_once "../PHPExcel/Classes/PHPExcel.php";
 <!doctype html>
 <html>
 
-<?php
-include('../layout/head.php');
-?>
+
 <body>
 
 <?php
@@ -152,7 +150,7 @@ include('../layout/header.php');
         }
     }
     ?>
-    <div class="pankuzu pcView"><a href="https://az-one.biz/"><img src="../img/common/icon_home.png" width="20px" height="" alt="home" /></a>&nbsp;&gt;&nbsp;不動産投資シミュレーション</div>
+    <div class="pankuzu pcView"><a href="https://az-one.biz/"><img src="../img/common/icon_home.png" width="20" height="" alt="home" /></a>&nbsp;&gt;&nbsp;不動産投資シミュレーション</div>
 <?php if($isShowFrom) { ?>
     <section class="explanatory" id="simulation">
         <h2 class="main_title">不動産投資シミュレーション</h2>
@@ -451,10 +449,10 @@ include('../layout/header.php');
 
     </section>
 <?php } ?>
-    <!-- <script
+    <script
             src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script> -->
+            crossorigin="anonymous"></script>
     <script src="../js/jquery.validate.min.js" type="text/javascript"></script>
     <script>
 
@@ -714,6 +712,5 @@ include('../layout/header.php');
 <?php
 include('../layout/footer.php');
 ?>
-<div class="btn_pagetop"><a href="#pagetop" class="anchor">PAGE<br>TOP</a></div>
 </body>
 </html>
